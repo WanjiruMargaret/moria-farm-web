@@ -295,3 +295,37 @@
   background-color: #256428;
   transform: translateY(-2px);
 }
+
+/* Success State Styles */
+.success-icon {
+  font-size: 3rem;
+  color: #2f7d32;
+  background: #e8f5e9;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+}
+
+.success-animation {
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Improvement for the inputs */
+.contact-form input::placeholder, 
+.contact-form textarea::placeholder {
+  color: #aaa;
+  font-size: 0.9rem;
+}
