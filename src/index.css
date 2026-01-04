@@ -130,90 +130,146 @@
   
 }
 
-{/* ============ HOME PAGE ============ */}
-
+/* ============ HOME PAGE ============ */
+/* FULL-WIDTH WRAPPER */
+.home-wrapper {
+  width: 100%;
+  overflow-x: hidden;
+}
 
 /* HERO SECTION */
-.hero {
+.hero-section {
+  height: 85vh;
+  width: 100%;
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+              url('/src/assets/images/slaughterhouse-placeholder.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.central-branding {
   text-align: center;
-  padding: 40px 20px;
+  animation: fadeIn 1.2s ease-out;
 }
 
-.hero h1 {
-  font-size: 2.8rem;
+.hero-logo {
+  width: 200px; /* Large circular presence */
+  height: 200px;
+  border-radius: 50%;
+  border: 6px solid #ffffff;
+  background-color: #fff;
+  object-fit: contain;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+  margin-bottom: 20px;
+}
+
+.hero-title {
+  color: #ffffff;
+  font-family: 'Georgia', serif;
+  font-size: 3.5rem;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+  text-transform: uppercase;
+}
+
+/* INTRO SECTION */
+.home-intro {
+  padding: 100px 10%;
+  background: #ffffff;
+}
+
+.home-intro .container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.tagline {
   color: #2f7d32;
-  margin-bottom: 10px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  font-size: 0.85rem;
 }
 
-.hero p {
-  font-size: 1.1rem;
-  color: #555;
-  margin-bottom: 50px;
-  letter-spacing: 1px;
+.home-intro h2 {
+  font-family: 'Georgia', serif;
+  font-size: 2.6rem;
+  color: #1b3a1e;
+  margin: 15px 0 25px;
 }
 
-/* CARD GRID */
+.home-intro p {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: #444;
+}
+
+/* CARDS SECTION */
+.home-cards-section {
+  background-color: #f9f9f9;
+  padding: 80px 10%;
+}
+
 .home-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
 }
 
-/* CARD */
 .card {
-  background: #ffffff;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 0; /* Sharp professional edges */
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
 }
 
-/* CARD IMAGE */
-.card img {
+.card-image-wrapper img {
   width: 100%;
-  height: 200px;
+  height: 250px;
   object-fit: cover;
-  border-radius: 10px;
+}
+
+.card-content {
+  padding: 40px;
+  text-align: center;
+}
+
+.card-content h2 {
+  font-family: 'Georgia', serif;
+  font-size: 1.8rem;
   margin-bottom: 15px;
 }
 
-/* CARD TEXT */
-.card h2 {
-  font-size: 1.4rem;
-  margin-bottom: 10px;
-  color: #222;
-}
-
-.card p {
-  font-size: 0.95rem;
-  color: #555;
-  margin-bottom: 15px;
-  line-height: 1.6;
-}
-
-/* BUTTON */
-.btn {
+.btn-outline {
   display: inline-block;
-  padding: 10px 18px;
-  background: #2f7d32;
-  color: white;
+  margin-top: 20px;
+  padding: 12px 30px;
+  border: 2px solid #2f7d32;
+  color: #2f7d32;
   text-decoration: none;
-  border-radius: 6px;
-  font-weight: 500;
+  font-weight: bold;
+  transition: all 0.3s;
 }
 
-.btn:hover {
-  background: #256428;
+.btn-outline:hover {
+  background: #2f7d32;
+  color: #fff;
 }
 
-{/* ============ CONTACT PAGE ============ */}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ============ CONTACT PAGE ============ */
 
 /* Container to center everything */
 .contact-container {
@@ -332,7 +388,7 @@
   font-size: 0.9rem;
 }
 
-{/* FOOTER STYLES */ }
+/* FOOTER STYLES */ 
 .footer {
   background-color: #1b3a1e; /* A darker shade of your brand green */
   color: #ffffff;
@@ -490,11 +546,10 @@
     padding: 40px 20px;
   }
 }
+/* End of About Page Styles */ 
 
-{/* End of About Page Styles */ }
 
-
-{/* Services Page Styles */}
+/* Services Page Styles */
 .services-wrapper {
   width: 100%;
   padding-top: 40px;
@@ -606,4 +661,4 @@
   .services-header h1 { font-size: 2rem; }
   .section-container { padding: 40px 5%; }
 }
-{/* End of Services Page Styles */ }
+/* End of Services Page Styles */ 
