@@ -130,6 +130,8 @@
   
 }
 
+{/* ============ HOME PAGE ============ */}
+
 
 /* HERO SECTION */
 .hero {
@@ -211,7 +213,7 @@
   background: #256428;
 }
 
-
+{/* ============ CONTACT PAGE ============ */}
 
 /* Container to center everything */
 .contact-container {
@@ -329,3 +331,279 @@
   color: #aaa;
   font-size: 0.9rem;
 }
+
+{/* FOOTER STYLES */ }
+.footer {
+  background-color: #1b3a1e; /* A darker shade of your brand green */
+  color: #ffffff;
+  padding: 60px 0 20px;
+  margin-top: 50px;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  padding: 0 20px;
+}
+
+.footer-section h2, 
+.footer-section h3 {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.footer-logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.footer-section p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #d1d1d1;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 12px;
+}
+
+.footer-section ul li a {
+  color: #d1d1d1;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #ffffff;
+  padding-left: 5px; /* Tiny animation effect */
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .footer-container {
+    text-align: center;
+  }
+}
+
+/* About Page Styles */
+
+.about-page {
+  font-family: 'Georgia', serif; /* Gives it that classic corporate story feel */
+  color: #333;
+}
+
+/* Banner Section */
+.about-banner {
+  height: 50vh;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+              url('/src/assets/images/about-header.jpg') center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.about-banner h1 {
+  font-size: 3.5rem;
+  border-bottom: 4px solid #2f7d32;
+  padding-bottom: 10px;
+}
+
+/* Story Rows */
+.story-row {
+  display: flex;
+  min-height: 500px;
+  align-items: stretch;
+}
+
+.story-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.story-text {
+  flex: 1;
+  padding: 80px 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #fff;
+}
+
+.story-image {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Add your images here */
+.history-img { background-image: url('/src/assets/images/history.jpg'); }
+.resilience-img { background-image: url('/src/assets/images/farm-view.jpg'); }
+.today-img { background-image: url('/src/assets/images/facility-construction.jpg'); }
+
+/* Typography */
+.subtitle {
+  color: #2f7d32;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.story-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #1b3a1e;
+}
+
+.story-text p {
+  line-height: 1.8;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 900px) {
+  .story-row, .story-row.reverse {
+    flex-direction: column;
+  }
+  .story-image {
+    height: 300px;
+  }
+  .story-text {
+    padding: 40px 20px;
+  }
+}
+
+{/* End of About Page Styles */ }
+
+
+{/* Services Page Styles */}
+.services-wrapper {
+  width: 100%;
+  padding-top: 40px;
+}
+
+.services-header {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #fff;
+}
+
+.services-header h1 {
+  font-family: 'Georgia', serif; /* Matching Nicholas Meat style */
+  font-size: 2.8rem;
+  color: #1b3a1e;
+  margin-bottom: 10px;
+}
+
+.header-line {
+  width: 80px;
+  height: 4px;
+  background-color: #2f7d32;
+  margin: 0 auto 20px;
+}
+
+.services-header p {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.section-container {
+  padding: 80px 10%;
+}
+
+.alt-bg {
+  background-color: #f4f7f4; /* Subtle green-tinted background */
+}
+
+.section-subtitle {
+  font-family: 'Georgia', serif;
+  font-size: 2rem;
+  color: #1b3a1e;
+  text-align: center;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background: white;
+  padding: 40px;
+  border-radius: 4px; /* Sharp corporate edges like the Nicholas Meat site */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, border-top 0.3s ease;
+  border-top: 5px solid #e0e0e0;
+  text-align: left;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  border-top: 5px solid #2f7d32; /* Hover highlights your brand green */
+}
+
+.icon-box {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.service-card h3 {
+  font-family: 'Georgia', serif;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.service-card p {
+  line-height: 1.7;
+  color: #555;
+  font-size: 1rem;
+}
+
+/* Impact Specific Styles */
+.impact-card {
+  border-top: 5px solid #1b3a1e;
+}
+
+.impact-icon {
+  background: #e8f5e9;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 768px) {
+  .services-header h1 { font-size: 2rem; }
+  .section-container { padding: 40px 5%; }
+}
+{/* End of Services Page Styles */ }

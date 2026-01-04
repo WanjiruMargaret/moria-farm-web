@@ -4,8 +4,9 @@ import About from "./pages/About";
 import Home from "./pages/Home";
 import Navbar from "./Components/Navbar";
 import Products from "./pages/Product";
-import Location from "./pages/Location";
+import Services from "./pages/Services";
 import Contact from "./pages/Contact";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -17,10 +18,11 @@ function App() {
           <Route path="/" element={<Home/>} />
           <Route path="/about" element={<About/>} />
           <Route path="/products" element={<Products />} />
-          <Route path="/location" element={<Location />} />
+          <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
+      <Footer />
     </Router>
   );
 }
