@@ -17,7 +17,7 @@ function Home() {
       {/* INTRO TEXT SECTION */}
       <section className="home-intro">
         <div className="container">
-          <span className="tagline">MAI MAHIU, KENYA</span>
+          <span className="tagline">MAII MAHIU, KENYA</span>
           <h2>Professional Meat Processing & Distribution</h2>
           <p>
             Muoria Farms produces safe, wholesome, and high-quality beef in the 

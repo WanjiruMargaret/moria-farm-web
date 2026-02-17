@@ -4,15 +4,15 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer-container">
-        
+
         {/* Column 1: Brand & Summary */}
         <div className="footer-section">
           <h2 className="footer-logo">Muoria Farm</h2>
           <p>
-            Premium agricultural produce from the heart of Mai Mahiu. 
+            Premium agricultural produce from the heart of Mai Mahiu.
             Dedicated to providing high-quality meat
             to our local and global communities.
-            Leading the way in Mai Mahiu through professional meat distribution, 
+            Leading the way in Mai Mahiu through professional meat distribution,
             job creation, and community infrastructure development.
           </p>
         </div>
