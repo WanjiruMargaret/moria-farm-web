@@ -1,5 +1,8 @@
 import { Link } from "react-router-dom";
 import Logo from "../assets/icons/Logo.jpg";
+import productsImg from "../assets/images/products.jpg";
+import aboutImg from "../assets/images/About.png";
+
 
 function Home() {
   return (
@@ -33,7 +36,7 @@ function Home() {
         <div className="home-cards">
           <div className="card">
             <div className="card-image-wrapper">
-              <img src="../assets/images/products.jpg" alt="meat" />
+              <img src={productsImg} alt="meat" />
             </div>
             <div className="card-content">
               <h2>Our Products</h2>
@@ -44,7 +47,7 @@ function Home() {
 
           <div className="card">
             <div className="card-image-wrapper">
-              <img src="../assets/images/About.png" alt="about us" />
+              <img src={aboutImg} alt="about us" />
             </div>
             <div className="card-content">
               <h2>Our Story</h2>
