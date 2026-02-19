@@ -671,24 +671,56 @@
 }
 
 /* ================= PRODUCTS SECTION ================= */
+
+/* ================= PRODUCTS HERO ================= */
+
+.products-hero {
+  height: 55vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+              url('/src/assets/images/slaughterhouse-placeholder.jpg') center/cover no-repeat;
+  color: white;
+}
+
+.products-hero-content {
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.products-hero h1 {
+  font-family: 'Georgia', serif;
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  border-bottom: 4px solid #2f7d32;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.products-hero p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
 .content-section {
   padding: 100px 15%;
   text-align: center;
-  background: #333;
+  background: #8e8e8e;
 }
 
 .content-section h1 {
   font-family: 'Georgia', serif;
   font-size: 2.8rem;
-  color: #1b3a1e;
-  margin-bottom: 25px;
+  color: white;
+  margin-bottom: 20px;
 }
 
 .content-section p {
   font-size: 1.15rem;
   line-height: 1.9;
-  color: #555;
-  max-width: 850px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -720,31 +752,34 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #333;
   line-height: 1.6;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
 }
+
 
 /* ===== HERO SECTION ===== */
 .sustainability-hero {
   text-align: center;
   padding: 100px 20px;
-  background-color: #2D5A27; /* Light eco-green tint */
+background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+              url('/src/assets/images/slaughterhouse-placeholder.jpg') center/cover no-repeat;
   margin-bottom: 60px;
-  border-radius: 0 0 50px 50px;
 }
 
 .sustainability-hero h1 {
+  font-family: 'Georgia', serif;
   font-size: 3.5rem;
   margin-bottom: 20px;
-  color: #2d5a27; /* Deep forest green */
+  color: white; /* Deep forest green */
+  border-bottom: 4px solid #2f7d32;
+  display: inline-block;
+  padding-bottom: 10px;
 }
 
 .sustainability-hero p {
   max-width: 800px;
   margin: 0 auto;
-  font-size: 1.2rem;
-  color: #666;
+  font-size: 1.1rem;
+  color: #f0f0f0;
+  line-height: 1.8;
 }
 
 /* ===== SPLIT SECTIONS (Zig-Zag) ===== */
@@ -754,11 +789,15 @@
   gap: 60px;
   margin-bottom: 100px;
   opacity: 0.95;
+  background: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* This creates the alternating order */
 .split-section.reverse {
   flex-direction: row-reverse;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 .split-text {

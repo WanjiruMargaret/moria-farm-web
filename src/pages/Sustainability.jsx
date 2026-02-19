@@ -4,12 +4,14 @@ function Sustainability() {
 
       {/* ===== HERO ===== */}
       <section className="sustainability-hero">
-        <h1>Sustainability</h1>
-        <p>
-          At Muoria Farm, sustainability is at the heart of everything we do.
-          From responsible livestock care to community development, we are committed
-          to building a future that benefits both people and the planet.
-        </p>
+        <div className="sustainability-hero-content">
+          <h1>Sustainability at Muoria Farm</h1>
+          <p>
+            At Muoria Farm, sustainability is at the heart of everything we do.
+            From responsible livestock care to community development, we are committed
+            to building a future that benefits both people and the planet.
+          </p>
+        </div>
       </section>
 
       {/* ===== ANIMAL WELFARE ===== */}
