@@ -130,88 +130,146 @@
   
 }
 
+/* ============ HOME PAGE ============ */
+/* FULL-WIDTH WRAPPER */
+.home-wrapper {
+  width: 100%;
+  overflow-x: hidden;
+}
 
 /* HERO SECTION */
-.hero {
+.hero-section {
+  height: 85vh;
+  width: 100%;
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+              url('/src/assets/images/slaughterhouse-placeholder.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.central-branding {
   text-align: center;
-  padding: 40px 20px;
+  animation: fadeIn 1.2s ease-out;
 }
 
-.hero h1 {
-  font-size: 2.8rem;
+.hero-logo {
+  width: 200px; /* Large circular presence */
+  height: 200px;
+  border-radius: 50%;
+  border: 6px solid #ffffff;
+  background-color: #fff;
+  object-fit: contain;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+  margin-bottom: 20px;
+}
+
+.hero-title {
+  color: #ffffff;
+  font-family: 'Georgia', serif;
+  font-size: 3.5rem;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+  text-transform: uppercase;
+}
+
+/* INTRO SECTION */
+.home-intro {
+  padding: 100px 10%;
+  background: #ffffff;
+}
+
+.home-intro .container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.tagline {
   color: #2f7d32;
-  margin-bottom: 10px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  font-size: 0.85rem;
 }
 
-.hero p {
-  font-size: 1.1rem;
-  color: #555;
-  margin-bottom: 50px;
-  letter-spacing: 1px;
+.home-intro h2 {
+  font-family: 'Georgia', serif;
+  font-size: 2.6rem;
+  color: #1b3a1e;
+  margin: 15px 0 25px;
 }
 
-/* CARD GRID */
+.home-intro p {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: #444;
+}
+
+/* CARDS SECTION */
+.home-cards-section {
+  background-color: #f9f9f9;
+  padding: 80px 10%;
+}
+
 .home-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
 }
 
-/* CARD */
 .card {
-  background: #ffffff;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 0; /* Sharp professional edges */
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
 }
 
-/* CARD IMAGE */
-.card img {
+.card-image-wrapper img {
   width: 100%;
-  height: 200px;
+  height: 250px;
   object-fit: cover;
-  border-radius: 10px;
+}
+
+.card-content {
+  padding: 40px;
+  text-align: center;
+}
+
+.card-content h2 {
+  font-family: 'Georgia', serif;
+  font-size: 1.8rem;
   margin-bottom: 15px;
 }
 
-/* CARD TEXT */
-.card h2 {
-  font-size: 1.4rem;
-  margin-bottom: 10px;
-  color: #222;
-}
-
-.card p {
-  font-size: 0.95rem;
-  color: #555;
-  margin-bottom: 15px;
-  line-height: 1.6;
-}
-
-/* BUTTON */
-.btn {
+.btn-outline {
   display: inline-block;
-  padding: 10px 18px;
-  background: #2f7d32;
-  color: white;
+  margin-top: 20px;
+  padding: 12px 30px;
+  border: 2px solid #2f7d32;
+  color: #2f7d32;
   text-decoration: none;
-  border-radius: 6px;
-  font-weight: 500;
+  font-weight: bold;
+  transition: all 0.3s;
 }
 
-.btn:hover {
-  background: #256428;
+.btn-outline:hover {
+  background: #2f7d32;
+  color: #fff;
 }
 
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 
+/* ============ CONTACT PAGE ============ */
 
 /* Container to center everything */
 .contact-container {
@@ -295,3 +353,525 @@
   background-color: #256428;
   transform: translateY(-2px);
 }
+
+/* Success State Styles */
+.success-icon {
+  font-size: 3rem;
+  color: #2f7d32;
+  background: #e8f5e9;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+}
+
+.success-animation {
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Improvement for the inputs */
+.contact-form input::placeholder, 
+.contact-form textarea::placeholder {
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+/* FOOTER STYLES */ 
+.footer {
+  background-color: #1b3a1e; /* A darker shade of your brand green */
+  color: #ffffff;
+  padding: 60px 0 20px;
+  margin-top: 50px;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  padding: 0 20px;
+}
+
+.footer-section h2, 
+.footer-section h3 {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.footer-logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.footer-section p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #d1d1d1;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 12px;
+}
+
+.footer-section ul li a {
+  color: #d1d1d1;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #ffffff;
+  padding-left: 5px; /* Tiny animation effect */
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .footer-container {
+    text-align: center;
+  }
+}
+
+/* About Page Styles */
+
+.about-page {
+  font-family: 'Georgia', serif; /* Gives it that classic corporate story feel */
+  color: #333;
+}
+
+/* Banner Section */
+.about-banner {
+  height: 50vh;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+              url('/src/assets/images/about-header.jpg') center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.about-banner h1 {
+  font-size: 3.5rem;
+  border-bottom: 4px solid #2f7d32;
+  padding-bottom: 10px;
+}
+
+/* Story Rows */
+.story-row {
+  display: flex;
+  min-height: 500px;
+  align-items: stretch;
+}
+
+.story-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.story-text {
+  flex: 1;
+  padding: 80px 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #fff;
+}
+
+.story-image {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Add your images here */
+.history-img { background-image: url('/src/assets/images/history.jpg'); }
+.resilience-img { background-image: url('/src/assets/images/farm-view.jpg'); }
+.today-img { background-image: url('/src/assets/images/facility-construction.jpg'); }
+
+/* Typography */
+.subtitle {
+  color: #2f7d32;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.story-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #1b3a1e;
+}
+
+.story-text p {
+  line-height: 1.8;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 900px) {
+  .story-row, .story-row.reverse {
+    flex-direction: column;
+  }
+  .story-image {
+    height: 300px;
+  }
+  .story-text {
+    padding: 40px 20px;
+  }
+}
+/* End of About Page Styles */ 
+
+
+/* Products Page Styles */
+/* ================= PAGE WRAPPER ================= */
+.services-wrapper {
+  width: 100%;
+  padding-top: 60px;
+  background: #fafafa;
+}
+
+/* ================= HEADER ================= */
+.services-header {
+  text-align: center;
+  padding: 80px 20px 60px;
+  background: linear-gradient(to bottom, #ffffff, #f4f7f4);
+}
+
+.services-header h1 {
+  font-family: 'Georgia', serif;
+  font-size: 3rem;
+  color: #1b3a1e;
+  margin-bottom: 15px;
+}
+
+.header-line {
+  width: 90px;
+  height: 4px;
+  background-color: #2f7d32;
+  margin: 0 auto 25px;
+  border-radius: 2px;
+}
+
+.services-header p {
+  font-size: 1.15rem;
+  color: #555;
+  max-width: 750px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+/* ================= SECTION CONTAINER ================= */
+.section-container {
+  padding: 100px 10%;
+}
+
+.alt-bg {
+  background-color: #f1f6f1;
+}
+
+/* ================= SUBTITLE ================= */
+.section-subtitle {
+  font-family: 'Georgia', serif;
+  font-size: 2.2rem;
+  color: #1b3a1e;
+  text-align: center;
+  margin-bottom: 60px;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+/* ================= GRID ================= */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ================= CARD ================= */
+.service-card {
+  background: #ffffff;
+  padding: 45px 40px;
+  border-radius: 10px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
+  transition: all 0.35s ease;
+  border-top: 6px solid #e0e0e0;
+  text-align: left;
+  position: relative;
+}
+
+.service-card:hover {
+  transform: translateY(-12px);
+  border-top: 6px solid #2f7d32;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
+}
+
+/* ================= ICON ================= */
+.icon-box {
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+}
+
+.service-card h3 {
+  font-family: 'Georgia', serif;
+  font-size: 1.5rem;
+  margin-bottom: 18px;
+  color: #1b3a1e;
+}
+
+.service-card p {
+  line-height: 1.8;
+  color: #555;
+  font-size: 1rem;
+}
+
+/* ================= IMPACT CARDS ================= */
+.impact-card {
+  border-top: 6px solid #1b3a1e;
+}
+
+.impact-icon {
+  background: #e8f5e9;
+  width: 65px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+}
+
+/* ================= PRODUCTS SECTION ================= */
+
+/* ================= PRODUCTS HERO ================= */
+
+.products-hero {
+  height: 55vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+              url('/src/assets/images/slaughterhouse-placeholder.jpg') center/cover no-repeat;
+  color: white;
+}
+
+.products-hero-content {
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.products-hero h1 {
+  font-family: 'Georgia', serif;
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  border-bottom: 4px solid #2f7d32;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.products-hero p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.content-section {
+  padding: 100px 15%;
+  text-align: center;
+  background: #8e8e8e;
+}
+
+.content-section h1 {
+  font-family: 'Georgia', serif;
+  font-size: 2.8rem;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.content-section p {
+  font-size: 1.15rem;
+  line-height: 1.9;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .services-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .section-container {
+    padding: 60px 6%;
+  }
+
+  .content-section {
+    padding: 70px 8%;
+  }
+
+  .services-grid {
+    gap: 30px;
+  }
+}
+
+/* Services Page Styles */
+
+
+/* sustainability.css */
+
+.sustainability-page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+
+/* ===== HERO SECTION ===== */
+.sustainability-hero {
+  text-align: center;
+  padding: 100px 20px;
+background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+              url('/src/assets/images/slaughterhouse-placeholder.jpg') center/cover no-repeat;
+  margin-bottom: 60px;
+}
+
+.sustainability-hero h1 {
+  font-family: 'Georgia', serif;
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  color: white; /* Deep forest green */
+  border-bottom: 4px solid #2f7d32;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.sustainability-hero p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: #f0f0f0;
+  line-height: 1.8;
+}
+
+/* ===== SPLIT SECTIONS (Zig-Zag) ===== */
+.split-section {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  margin-bottom: 100px;
+  opacity: 0.95;
+  background: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* This creates the alternating order */
+.split-section.reverse {
+  flex-direction: row-reverse;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.split-text {
+  flex: 1;
+}
+
+.split-text h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #2d5a27;
+  position: relative;
+}
+
+/* Subtle accent line under headings */
+.split-text h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #86bc25; /* Bright leaf green */
+  margin-top: 10px;
+}
+
+.split-image {
+  flex: 1;
+}
+
+.split-image img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.split-image img:hover {
+  transform: scale(1.02);
+}
+
+/* ===== CALL TO ACTION (CTA) ===== */
+.sustainability-cta {
+  text-align: center;
+  padding: 80px 20px;
+  background: #2d5a27;
+  color: white;
+  border-radius: 30px;
+  margin-bottom: 60px;
+}
+
+.sustainability-cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  .split-section, .split-section.reverse {
+    flex-direction: column; /* Stack on top of each other on mobile */
+    text-align: center;
+    gap: 30px;
+  }
+
+  .split-text h2::after {
+    margin: 10px auto;
+  }
+
+  .split-image img {
+    height: 350px;
+  }
+
+  .sustainability-hero h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/* End of Sustainability Page Styles */
