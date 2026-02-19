@@ -16,8 +16,8 @@ function Navbar() {
         <ul className="nav-links">
           <li><Link to="/">Home</Link></li>
           <li><Link to="/about">About</Link></li>
-          <li><Link to="/products">Products</Link></li>
-          <li><Link to="/location">Location</Link></li>
+          <li><Link to="/products">Products/services</Link></li>
+          <li><Link to="/sustainability">Sustainability</Link></li>
           <li><Link to="/contact">Contact</Link></li>
         </ul>
 
@@ -38,8 +38,8 @@ function Navbar() {
       <ul className={`nav-menu ${menuOpen ? "open" : ""}`}>
         <li><Link to="/" onClick={() => setMenuOpen(false)}>Home</Link></li>
         <li><Link to="/about" onClick={() => setMenuOpen(false)}>About</Link></li>
-        <li><Link to="/products" onClick={() => setMenuOpen(false)}>Products</Link></li>
-        <li><Link to="/location" onClick={() => setMenuOpen(false)}>Location</Link></li>
+        <li><Link to="/products" onClick={() => setMenuOpen(false)}>Products/services</Link></li>
+        <li><Link to="/sustainability" onClick={() => setMenuOpen(false)}>Sustainability</Link></li>
         <li><Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link></li>
       </ul>
     </>
