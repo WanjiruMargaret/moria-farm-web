@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Logo from "../assets/icons/logo.jpg";
+import Logo from "../assets/icons/Logo.jpg";
 
 function Home() {
   return (
