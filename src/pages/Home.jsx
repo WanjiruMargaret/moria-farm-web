@@ -33,7 +33,7 @@ function Home() {
         <div className="home-cards">
           <div className="card">
             <div className="card-image-wrapper">
-              <img src="/src/assets/images/products.jpg" alt="meat" />
+              <img src="../assets/images/products.jpg" alt="meat" />
             </div>
             <div className="card-content">
               <h2>Our Products</h2>
@@ -44,7 +44,7 @@ function Home() {
 
           <div className="card">
             <div className="card-image-wrapper">
-              <img src="/src/assets/images/About.png" alt="about us" />
+              <img src="../assets/images/About.png" alt="about us" />
             </div>
             <div className="card-content">
               <h2>Our Story</h2>
