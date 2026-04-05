@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import barIcon from "/src/assets/icons/bar.png";
+import logo from "/src/assets/icons/Logo.jpg";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -9,6 +10,7 @@ function Navbar() {
     <>
       <nav className="navbar">
         <div className="brand">
+          <img src={logo} alt="Muoria Farm Logo" className="navbar-logo" />
           <h2 className="brand-name">Muoria Farm</h2>
         </div>
 
