@@ -1,5 +1,5 @@
 .page-content {
-  padding-top: 75px;
+  padding-top: 65px;
   min-height: calc(100vh - 75px);
 }
 
@@ -21,10 +21,10 @@ body {
 
 /* ============ NAVBAR ============ */
 .navbar {
-  height: 70px;
+  height: 65px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 0 5%;
   background: #2D5A27; /* Updated to your exact brand green */
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
@@ -33,7 +33,17 @@ body {
   left: 0;
   width: 100%;
   box-sizing: border-box;
-  z-index: 1000;
+  z-index: 2000;
+  border-bottom: 1px solid #eeeeee;
+  transition: 0.3s ease; /* Smooth transition for any future effects */
+}
+
+.nav-container {
+  width: 92%;
+  max-width: 1200px; /* This keeps the 'box' of content small and centered */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* Brand (Combined & Cleaned up) */
