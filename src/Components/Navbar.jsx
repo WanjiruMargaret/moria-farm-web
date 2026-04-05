@@ -9,27 +9,29 @@ function Navbar() {
   return (
     <>
       <nav className="navbar">
-        <div className="brand">
-          <img src={logo} alt="Muoria Farm Logo" className="navbar-logo" />
-          <h2 className="brand-name">Muoria Farm</h2>
+        <div className="nav-container">
+          <div className="brand">
+            <img src={logo} alt="Muoria Farm Logo" className="navbar-logo" />
+            <h2 className="brand-name">Muoria Farm</h2>
+          </div>
+
+          {/* Desktop links */}
+          <ul className="nav-links">
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/about">About</Link></li>
+            <li><Link to="/products">Products/services</Link></li>
+            <li><Link to="/sustainability">Sustainability</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
+          </ul>
+
+          {/* Mobile icon */}
+          <img
+            src={barIcon}
+            alt="menu"
+            className="nav-icon"
+            onClick={() => setMenuOpen(!menuOpen)}
+          />
         </div>
-
-        {/* Desktop links */}
-        <ul className="nav-links">
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/products">Products/services</Link></li>
-          <li><Link to="/sustainability">Sustainability</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
-        </ul>
-
-        {/* Mobile icon */}
-        <img
-          src={barIcon}
-          alt="menu"
-          className="nav-icon"
-          onClick={() => setMenuOpen(!menuOpen)}
-        />
       </nav>
 
       {menuOpen && (

@@ -25,25 +25,29 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding: 0 5%;
+  padding: 0 ;
   background: #2D5A27; /* Updated to your exact brand green */
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 1220px;
   box-sizing: border-box;
   z-index: 2000;
   border-bottom: 1px solid #eeeeee;
-  transition: 0.3s ease; /* Smooth transition for any future effects */
 }
 
 .nav-container {
-  width: 92%;
+  width: 100%;
   max-width: 1200px; /* This keeps the 'box' of content small and centered */
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 30px;
+  height: 100%;
 }
 
 /* Brand (Combined & Cleaned up) */
@@ -108,7 +112,7 @@ body {
   display: none;
   z-index: 1100;
   /* If it's a black PNG, this turns it white to match the brand text! */
-  filter: brightness(0) invert(1); 
+  /*filter: brightness(0) invert(1); */
 }
 
 /* ============ SIDEBAR MENU ============ */
@@ -177,8 +181,11 @@ body {
 /* ============ HOME PAGE ============ */
 /* FULL-WIDTH WRAPPER */
 .home-wrapper {
-  width: 100%;
+  width: 90%;
+  max-width: 1220px;
   overflow-x: hidden;
+  margin: 0 auto;
+  padding: 0;
 }
 
 /* HERO SECTION */
