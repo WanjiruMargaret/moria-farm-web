@@ -12,7 +12,7 @@ function Home() {
         <div className="hero-overlay">
           <div className="central-branding">
             <img src={Logo} alt="Muoria Farms Logo" className="hero-logo" />
-            <h1 className="hero-title">MUORIA FARMS LLC.</h1>
+            <h1 className="hero-title">MUORIA FARM</h1>
           </div>
         </div>
       </section>
@@ -20,7 +20,7 @@ function Home() {
       {/* INTRO TEXT SECTION */}
       <section className="home-intro">
         <div className="container">
-          <span className="tagline">MAII MAHIU, KENYA</span>
+          <span className="tagline">MAAI MAHIU, KENYA</span>
           <h2>Professional Meat Processing & Distribution</h2>
           <p>
             Muoria Farms produces safe, wholesome, and high-quality beef in the 

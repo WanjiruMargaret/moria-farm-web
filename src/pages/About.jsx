@@ -15,7 +15,7 @@ function About() {
           <span className="subtitle">THE BEGINNING</span>
           <h2>Our History</h2>
           <p>
-            Muoria Farm was founded with a deep passion for the agricultural heritage of Mai Mahiu. 
+            Muoria Farm was founded with a deep passion for the agricultural heritage of Maai Mahiu. 
             Our humble beginnings continue to drive us today as we produce high-quality beef products 
             for our local community and partners abroad. Our pursuit of excellence has kept us 
             innovating through the years.
@@ -42,7 +42,7 @@ function About() {
       <section className="story-row">
         <div className="story-text">
           <span className="subtitle">TODAY</span>
-          <h2>Impacting Mai Mahiu</h2>
+          <h2>Impacting Maai Mahiu</h2>
           <p>
             Today, we are blessed to provide job opportunities to local residents who share our 
             commitment to excellence. If you drive by our facility, construction is evident—representing 
