@@ -46,7 +46,7 @@ function Products() {
           <h1>Our Impact & Services</h1>
           <div className="header-line"></div>
           <p>
-            Muoria Farm is dedicated to quality produce and the sustainable growth of Mai Mahiu.
+            Muoria Farm is dedicated to quality produce and the sustainable growth of Maai Mahiu.
           </p>
         </div>
 
