@@ -9,7 +9,7 @@ function Footer() {
         <div className="footer-section">
           <h2 className="footer-logo">Muoria Farm</h2>
           <p>
-            Premium agricultural produce from the heart of Mai Mahiu.
+            Premium agricultural produce from the heart of Maai Mahiu.
             Dedicated to providing high-quality meat
             to our local and global communities.
             Leading the way in Maai Mahiu through professional meat distribution,
