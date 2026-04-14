@@ -15,7 +15,7 @@ function Products() {
   const communityImpact = [
     { 
       title: "Local Job Opportunities", 
-      desc: "As a growing farm, we are creating employment for the youth and professionals in Mai Mahiu.", 
+      desc: "As a growing farm, we are creating employment for the youth and professionals in Maai Mahiu.", 
       icon: "🤝" 
     },
     { 
